@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhaRXpert | Global Pharma Consulting & Supply</title>
+    <!-- Icons and Animations -->
+    <link href="https://cdnjs.cloudflare.com" rel="stylesheet">
+    <link href="https://unpkg.com" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a192f;
+            --blue: #004a99;
+            --teal: #00afb9;
+            --light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--light); color: #333; line-height: 1.6; overflow-x: hidden; }
+
+        header { background: var(--navy); color: white; padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .logo { font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; }
+        .logo span { color: var(--teal); }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; }
+
+        .hero { height: 70vh; background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 10%; margin-top: 60px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin-bottom: 2rem; opacity: 0.9; }
+
+        .btn { background: var(--teal); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; display: inline-block; }
+        .btn:hover { background: var(--blue); transform: translateY(-2px); }
+
+        .section { padding: 80px 10%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--navy); text-transform: uppercase; }
+        .section-title div { width: 60px; height: 4px; background: var(--teal); margin: 10px auto; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.4s; border-top: 4px solid var(--teal); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .card i { font-size: 2.5rem; color: var(--blue); margin-bottom: 15px; }
+        .card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--navy); }
+        .card p { font-size: 0.85rem; color: #666; }
+
+        .stats { background: var(--navy); color: white; display: flex; justify-content: space-around; padding: 60px 10%; text-align: center; flex-wrap: wrap; gap: 20px; }
+        .stat-item h3 { font-size: 2.5rem; color: var(--teal); }
+
+        .cat-card { background: var(--navy); color: white; padding: 25px; border-radius: 8px; text-align: center; }
+        .cat-card h4 { color: var(--teal); margin-bottom: 8px; }
+
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: white; padding: 50px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 0.9rem; }
+        
+        footer { background: #050c16; color: white; text-align: center; padding: 40px; font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .contact-container { grid-template-columns: 1fr; }
+            .stats { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Pha<span>RX</span>pert</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#sectors">Industries</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 data-aos="fade-up">Global Pharmaceutical Solutions</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Your Expert Partner in API Procurement, Regulatory Consulting, and Generic Development for Overseas Markets.</p>
+    <a href="#contact" class="btn" data-aos="zoom-in" data-aos-delay="400">Partner With Us</a>
+</section>
+
+<!-- DYNAMIC CORE SERVICES SECTION -->
+<section id="services" class="section">
+    <div class="section-title" data-aos="fade-down">
+        <h2>Core Services</h2>
+        <div></div>
+    </div>
+    <div class="services-grid">
+        <div class="card" data-aos="fade-up">
+            <i class="fas fa-user-tie"></i>
+            <h3>Consulting Services</h3>
+            <p>Expert guidance on international regulatory landscapes and market entry strategies.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-vial"></i>
+            <h3>API Sourcing</h3>
+            <p>Reliable procurement of high-quality active ingredients from audited global manufacturers.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-pills"></i>
+            <h3>Generic Product Development</h3>
+            <p>End-to-end formulation development ensuring bio-equivalence and global standards.</p>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <i class="fas fa-industry"></i>
+            <h3>CMO Inquiry</h3>
+            <p>Facilitating contract manufacturing partnerships for scalable production across borders.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-file-contract"></i>
+            <h3>Dossier Licensing</h3>
+            <p>Comprehensive support for CTD/eCTD/ACTD dossiers and out-licensing opportunities.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Technology Transfer</h3>
+            <p>Seamless execution of technical transfers for production optimization and site shifts.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-microscope"></i>
+            <h3>CRO Services (BA/BE)</h3>
+            <p>Coordinating clinical research, bioavailability, and bioequivalence studies.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ANIMATED STATS SECTION -->
+<div class="stats">
+    <!-- Stat 1: Specialized Verticals -->
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="10000">
+        <i class="fas fa-layer-group" style="color: var(--teal); font-size: 1.5rem; margin-bottom: 10px; display: block;"></i>
+        <h3>7+</h3>
+        <p>Specialized Verticals</p>
+    </div>
+
+    <!-- Stat 2: Compliance Rate -->
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="10000">
+        <i class="fas fa-certificate" style="color: var(--teal); font-size: 1.5rem; margin-bottom: 10px; display: block;"></i>
+        <h3>100%</h3>
+        <p>Compliance Rate</p>
+    </div>
+
+    <!-- Stat 3: Global Supply Reach -->
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="10000">
+        <i class="fas fa-globe-americas" style="color: var(--teal); font-size: 1.5rem; margin-bottom: 10px; display: block;"></i>
+        <h3>Global</h3>
+        <p>Supply Reach</p>
+    </div>
+</div>
+
+
+<!-- INDUSTRIES SECTION -->
+<!-- EXPANDED INDUSTRY SPECIALIZATIONS -->
+
+<section id="sectors" class="section" style="background: #fdfdfd;">
+    <div class="section-title" data-aos="fade-down">
+        <h2>Industry Specializations</h2>
+        <p style="max-width: 600px; margin: 10px auto; color: #666;">Tailored technical solutions across the lifecycle of life-science products.</p>
+        <div></div>
+    </div>
+    <div class="services-grid">
+        
+        <!-- Pharmaceutical Section -->
+        <div class="card" data-aos="flip-left">
+            <i class="fas fa-pills" style="color: var(--blue);"></i>
+            <h4>Pharmaceuticals</h4>
+            <ul style="list-style: none; font-size: 0.85rem; color: #555; margin-top: 15px; text-align: left;">
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Full CTD/eCTD/ACTD Dossiers</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Complex Generic Formulations</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Rx to OTC Switch Strategies</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Sterile & Oncology Supply</li>
+            </ul>
+        </div>
+
+        <!-- Nutraceutical Section -->
+        <div class="card" data-aos="flip-left" data-aos-delay="100">
+            <i class="fas fa-leaf" style="color: #27ae60;"></i>
+            <h4>Nutraceuticals</h4>
+            <ul style="list-style: none; font-size: 0.85rem; color: #555; margin-top: 15px; text-align: left;">
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Vitamin & Mineral Blends</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Stability-Tested Supplements</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Functional Food Ingredients</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Herbal & Botanical Extracts</li>
+            </ul>
+        </div>
+
+        <!-- Cosmeceutical Section -->
+        <div class="card" data-aos="flip-left" data-aos-delay="200">
+            <i class="fas fa-pump-medical" style="color: #e67e22;"></i>
+            <h4>Cosmeceuticals</h4>
+            <ul style="list-style: none; font-size: 0.85rem; color: #555; margin-top: 15px; text-align: left;">
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Advanced Derma-Formulations</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Anti-Aging & SPF Efficacy</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Scalp & Hair-Care Tech</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Regulatory Safety Dossiers</li>
+            </ul>
+        </div>
+
+        <!-- Veterinary Section -->
+        <div class="card" data-aos="flip-left" data-aos-delay="300">
+            <i class="fas fa-dog" style="color: #8e44ad;"></i>
+            <h4>Veterinary</h4>
+            <ul style="list-style: none; font-size: 0.85rem; color: #555; margin-top: 15px; text-align: left;">
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Livestock Antibiotics & APIs</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Companion Animal Health</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> Feed Additives & Premixes</li>
+                <li><i class="fas fa-check-circle" style="color: var(--teal); margin-right: 5px;"></i> WHO-GMP Veterinary Plants</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section" style="background:#eef2f5;">
+    <div class="section-title" data-aos="fade-down">
+        <h2>Contact Our Experts</h2>
+        <div></div>
+    </div>
+    <div class="contact-container" data-aos="zoom-in">
+        <div>
+            <h3>Get in Touch</h3>
+            <p>Connect with PhaRXpert for your specialized needs across the globe.</p>
+            <br>
+            <p><i class="fas fa-envelope"></i> pharxpert@gmail.com</p>
+            <p><i class="fas fa-globe"></i> Global Pharmaceutical Solutions</p>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="access_key" value="e5f004a9-d80a-48c9-955d-233cd63f9f5d">
+            <input type="hidden" name="subject" value="New Inquiry - PhaRXpert">
+            <input type="checkbox" name="botcheck" style="display: none;">
+
+            <!-- Name and Email -->
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <!-- NEW: Company and Country -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <input type="text" name="company" placeholder="Company Name" required>
+                <input type="text" name="country" placeholder="Country" required>
+            </div>
+            
+            <select name="service_interest" required>
+                <option value="">Select Service Interest</option>
+                <option value="Consulting">Consulting Services</option>
+                <option value="API Sourcing">API Sourcing</option>                
+                <option value="Generic Product Development">Generic Product Development</option>
+                <option value="CMO Inquiry">CMO Inquiry</option>
+                <option value="Dossier Licensing">Dossier Licensing</option>
+                <option value="Technology Transfer">Technology Transfer</option>
+                <option value="CRO Services for BA/BE">CRO Services for BA/BE</option>
+                <option value="Nutraceutical Products">Nutraceutical Products</option>
+                <option value="Veterinary Products">Veterinary Products</option>
+                <option value="Cosmeceutical Products">Cosmeceutical Products</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <!-- OPTIONAL FILE ATTACHMENT -->
+            <div style="margin-bottom: 15px;">
+                <label style="font-size: 0.8rem; color: #666; margin-bottom: 5px; display: block;">
+                    Attach Company Profile or Product List or Specific Attachment (Optional)
+                </label>
+                <input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png" style="font-size: 0.8rem; border: 1px solid #ddd; background: #fff; padding: 8px; width: 100%;">
+            </div>
+            
+            <!-- h-captcha Integration -->
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <button type="submit" class="btn" style="width:100%; margin-top: 10px;">Send Inquiry</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 PhaRXpert Consulting Services. All Rights Reserved.</p>
+    <p>Bridging Science and Global Supply.</p>
+</footer>
+
+<!-- Scripts for Captcha and Animations -->
+<script src="https://web3forms.com" async defer></script>
+<script src="https://unpkg.com"></script>
+<script>
+    AOS.init({ duration: 5000, once: true });
+</script>
+
+</body>
+</html>
